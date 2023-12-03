@@ -1,0 +1,54 @@
+/* Hide the dropdown indicator in navigation items with a dropdown */
+.nav-item.dropdown > a::after {
+  content: none; /* Hide the dropdown indicator */
+}
+
+/* Display the dropdown menu when hovering over the parent dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Custom styling for the active dropdown menu */
+.active-dropdown {
+  --bs-bg-opacity: 1; /* Set the background opacity to 1 */
+  --bs-text-opacity: 1; /* Set the text opacity to 1 */
+  opacity: 0.75 !important; /* Reduce overall opacity to 0.75 with importance */
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important; /* Text color with light RGB values and custom text opacity */
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; /* Background color with primary RGB values and custom background opacity */
+}
+
+/* Style for the back-to-top button */
+#back-to-top {
+  z-index: 1000; /* Set the stacking order to 1000, making it appear above other elements */
+}
+
+/* Hover effect for the back-to-top button */
+#back-to-top:hover {
+  opacity: 75% !important; /* Increase opacity to 75% when the button is hovered over with importance */
+}
+
+.horizontal-divider {
+  width: 100%; /*Set the width to 100% the with of the container */
+  --bs-bg-opacity: 1; /* Set the background opacity to 1 */
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important; /* Background color with secondary RGB values and custom background opacity */
+}
+
+.title-bar {
+  height: 25vh; /* Set the height to 20% of the viewport height */
+  border: none; /* Remove the default border*/
+}
+
+.title-bar img {
+  width: 100%; /* Make the image take 100% of the container's width */
+  height: 100%; /* Make the image take 100% of the container's height */
+  object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
+}
+
+.flip-v {
+  transform: scaleY(-1); /* Flip the image vertically */
+}
+
+.flip-h {
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
