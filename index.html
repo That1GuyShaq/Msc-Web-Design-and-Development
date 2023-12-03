@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+
+    <link rel="icon" href="assets/images/logo.ico" sizes="60x60">
+
+    <title>Super Big University</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg text-nowrap" aria-label="Top Navigation">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="Super Big University logo">
+                </a>
+
+                <div class="d-grid gap-2 d-md-block d-sm-inline">
+                    <a href="pages/admissions/apply.html" class="btn btn-success btn-lg">Apply Now</a>
+                    <a href="pages/admissions/login.html" class="btn btn-outline-secondary btn-lg">Login</a>
+                </div>
+
+                <a href="pages/contact.html" class="btn btn-outline-success btn-lg me-5">Contact Us</a>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success text-nowrap sticky-top" aria-label="Top Navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_links" aria-controls="navbar_links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse flex-grow-0 ps-5" id="navbar_links">
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link border-end border-2 border-accent" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link border-end border-2 border-accent dropdown-toggle" href="#" id="academic_programs_dropdown" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                            <ul class="dropdown-menu" aria-labelledby="academic_programs_dropdown">
+                                <li>
+                                    <a class="dropdown-item" href="pages/academics/program-1.html">Program 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages/academics/program-2.html">Program 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages/academics/program-3.html">Program 3</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link border-end border-2 border-accent" aria-current="page" href="pages/gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link border-end border-2 border-accent" aria-current="page" href="pages/calendar.html">Calendar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <!-- Carousel -->
+            <section>
+                <div id="index_carousel_indicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#index_carousel_indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#index_carousel_indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#index_carousel_indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#index_carousel_indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active card">
+                            <img src="assets/images/campus_building_2.jpg" class="d-block w-100" alt="Carousel Image 1">
+                            <div class="card-img-overlay bg-black bg-opacity-75 d-flex justify-content-center align-items-center">
+                                <div class="text-center text-light">
+                                    <h1>
+                                        Explore
+                                    </h1>
+                                    <p class="flex-sm-shrink-1">
+                                        The <span name="department"></span> has a variety of study Locations and facilities
+                                    </p>
+    
+                                    <a href="pages/gallery.html" class="btn btn-outline-light">
+                                        Take Me there<i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item card">
+                            <img src="assets/images/students_together.jpg" class="d-block w-100 h-100" alt="Carousel Image 2">
+                            <div class="card-img-overlay bg-black bg-opacity-50 d-flex justify-content-center align-items-center p-0">
+                                <div class="text-center text-light">
+                                    <h1>
+                                        Collaborate
+                                    </h1>
+                                    <p>
+                                        Our Programs are designed to incorporate group work and individual studies in the curriculum 
+                                    </p>
+    
+                                    <a href="pages/academics/program-1.html" class="btn btn-outline-light">
+                                        Take Me there <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item card">
+                            <img src="assets/images/student_laptop.jpg" class="d-block w-100" alt="Carousel Image 3">
+                            <div class="card-img-overlay bg-black bg-opacity-50 d-flex justify-content-center align-items-center p-0">
+                                <div class="text-center text-light">
+                                    <h1>
+                                        Study Online
+                                    </h1>
+                                    <p>
+                                        Study At home or abroad, <span name="department"></span> welcomes all
+                                    </p>
+    
+                                    <a href="pages/academics/program-2.html" class="btn btn-outline-light">
+                                        Take Me there <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="assets/images/graduate.jpg" class="d-block w-100" alt="Carousel Image 4">
+                            <div class="card-img-overlay bg-black bg-opacity-50 d-flex justify-content-center align-items-center p-0">
+                                <div class="text-center text-light">
+                                    <h1>
+                                        Alumni
+                                    </h1>
+                                    <p>
+                                        Our graduates serve in ministry, medicine and many organizations across the world
+                                    </p>
+    
+                                    <a href="pages/gallery.html" class="btn btn-outline-light">
+                                        Take Me there <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#index_carousel_indicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+    
+                    <button class="carousel-control-next" type="button" data-bs-target="#index_carousel_indicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        <!-- End -->
+          
+        <!-- The Numbers -->
+        <section class="container">
+            <div class="row g-5 pb-5 pt-5">
+                <div class="col-lg-3 col-sm-12 border-end border-4">
+                    <div class="text-center text-success">
+                        <h4 class="text-secondary">Countries Represented</h4>
+                        <h1 class="font-slabo title-font">
+                            <span class="counter" dat-min="0" data-max="15">0</span>+
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 border-end border-4">
+                    <div class="text-center text-success">
+                        <h4 class="text-secondary">Student Population</h4>
+                        <h1 class="font-slabo title-font">
+                            <span class="counter" dat-min="0" data-max="1200">0</span>+
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 border-end border-4">
+                    <div class="text-center text-success">
+                        <h4 class="text-secondary">Programs</h4>
+                        <h1 class="font-slabo title-font">
+                            <span class="counter" dat-min="0" data-max="3">0</span>+
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12">
+                    <div class="text-center text-success">
+                        <h4 class="text-secondary">Alumni</h4>
+                        <h1 class="font-slabo title-font">
+                            <span class="counter" dat-min="0" data-max="2700">0</span>+
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+
+        <!-- Parallax -->
+        <section class="parallax mt-1">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-sm-12 pt-4 d-flex justify-content-around">
+                        <a href="pages/academics/program-2.html" class="btn btn-light w-75">
+                            Online Program
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 pt-4 d-flex justify-content-around">
+                        <a href="pages/contact.html" class="btn btn-light w-75">
+                            Contact Admissions
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 pt-4 d-flex justify-content-around">
+                        <a href="pages/gallery.html" class="btn btn-light w-75">
+                            View Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+
+        <!-- Media -->
+        <div class="container text-center mt-5 mb-3">
+            <div class="row justify-content-center">
+                <div class="col-2 bg-success text-light d-flex justify-content-center align-items-center">
+                    <a href="pages/calendar.html" class="text-decoration-none link-light fw-bolder h1 text-uppercase">
+                        Book
+                        <br>
+                        A Campus
+                        <br>
+                        Tour
+                    </a>
+                </div>
+                <div class="col-10">
+                    <div class="card title-bar mb-0">
+                        <img src="assets/images/campus_building_2.jpg" alt="Page Banner Background Image">
+                        <div class="card-img-overlay bg-black bg-opacity-25 d-flex justify-content-center align-items-center p-0">
+                            <div class="text-center text-light">
+                               
+                                <a href="media/gallery.html" class="btn btn-lg btn-outline-light">
+                                    View Gallery <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-dark p-4 pb-2">
+            <div class="row justify-content-between">
+                <div class="col text-secondary position-relative">
+                    <p class="position-absolute bottom-0 start-0 m-0" id="copyright">
+                        <i class="fa-regular fa-copyright"></i>
+                        <span></span>
+                        <a href="index.html" class="link-warning text-decoration-none"><span name="university"></span></a>
+                    </p>
+                </div>
+                <div class="col">
+                    <a href="javascript:Void(0);" class="link-warning opacity-25 float-end text-decoration-none" id="back-to-top" title="Scroll to top" onclick="topFunction()">
+                        <i class="fa-solid fa-chevron-up fa-lg px-1 mx-4"></i> <br> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome/all.min.js"></script>
+</body>
+</html>
