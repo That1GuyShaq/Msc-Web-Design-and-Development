@@ -1,0 +1,74 @@
+/* Font Families*/
+   @import url('fonts.css');
+
+/* Bootstrap */
+    /* @import url('bootstrap/bootstrap-grid.css');
+    @import url('bootstrap/bootstrap-utilities.css'); */
+
+    .nav-link {
+        font-size: 1.3em;
+        font-family: 'lora-italic';
+    }
+
+figcaption {
+    padding: 3px;
+    color: #a7a7a7;
+    fill-opacity: 25%;
+    text-align: center;
+    background-color: rgb(253, 237, 239);
+    font: italic smaller sans-serif;
+    /* position: absolute;
+    right: 1.1%;
+    bottom: 1.5%; */
+}
+
+figcaption a {
+    color: var(--bs-pink);
+    text-decoration: none;
+}
+
+section:first-of-type {
+    height: 30em;
+    background-color: rgb(253, 237, 239);
+}
+
+section:first-of-type img {
+    height: 75%;
+    padding: 1%;
+    background-color: rgb(253, 237, 239) ;
+}
+
+.title-bar {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    border: none; /* Remove the default border*/
+  }
+
+.title-bar figure > img {
+    width: 100%; /* Make the image take 100% of the container's width */
+    height: 100vh; /* Make the image take 100% of the container's height */
+    object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
+}
+
+.page-title p:nth-of-type(1) {
+    font-size: 5em;
+    font-family: 'Mr De Haviland-regular';
+}
+.page-title p:nth-of-type(2) {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'lora-italic';
+    line-height: 100%;
+}
+
+.fnt-lora-i {
+    font-family: 'lora-italic';
+}
+
+.fnt-lora-r {
+    font-family: 'lora-regular';
+}
+
+.fnt-mr-r {
+    font-family: 'Mr De Haviland-regular';
+}
+
