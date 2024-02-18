@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <link rel="icon" href="assets/images/cropped-logo-square-32x32.png" sizes="32x32">
+
+    <title>About Us - Flowers4U</title>
+</head>
+<body>
+    <header class="sticky-top border-bottom border-5 border-danger border-opacity-25">
+        <nav class="navbar navbar-expand-lg text-nowrap bg-pink" aria-label="Top Navigation">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" class="img-fluid float-start w-25" alt="Flowers4U logo">
+                </a>
+
+                <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_links" aria-controls="navbar_links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse flex-grow-0" id="navbar_links">
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link border-warning" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="flowers.html">Flowers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+    
+                        <li class="nav-item ms-5">
+                            <a class="btn btn-outline-warning active" href="request.html">Request</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 page-title">
+                    <p class="text-center page-title">
+                        Request Arrangements
+                    </p>
+                </div>
+                <!-- Request Arrangements -->
+                <form action="mailto:contactus@flowers4u.com" method="get" class="row g-3">
+                    <div class="container border-top border-5 border-danger border-opacity-25 pt-3">
+                        <div class="row g-3">
+                            <div class="col-7">
+                                <div class="card">
+                                    <h5 class="card-header">Customer Details</h5>
+                                    <div class="card-body">
+                                        <div class="row g-4">
+                                            <div class="col-lg-2">
+                                                <label for="title" class="form-label">Title</label>
+                                                <select class="form-select" aria-label="Select Your Title" id="title" name="title" required>
+                                                    <option selected hidden>Title</option>
+                                                    <option value="Mr">Mr</option>
+                                                    <option value="Ms">Ms</option>
+                                                    <option value="Mrs">Mrs</option>
+                                                    <option value="Miss">Miss</option>
+                                                    <option value="Misses">Misses</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <label for="first_name" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" required>
+                                            </div>
+
+                                            <div class="col-lg-5">
+                                                <label for="last_name" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" required>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                            </div>
+            
+                                            <div class="col-lg-6">
+                                                <label for="telephone" class="form-label">Telephone</label>
+                                                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="(xxx) xxx-xxxx" required>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <label for="billing_address" class="form-label">Billing Address</label>
+                                                <textarea class="form-control" name="billing_address" placeholder="Enter your address here" rows="8" id="billing_address" required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-5">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <h5 class="card-header">Arrangement</h5>
+                                            <div class="card-body">
+                                                <div class="row g-4">
+                                                    <div class="col-lg-12">
+                                                        <label for="occasion" class="form-label">Occasion</label>
+                                                        <select class="form-select" aria-label="Select Your occasion" id="occasion" name="occasion" required>
+                                                            <option selected hidden>Select Your Occasion</option>
+                                                            <option value="Wedding">Wedding</option>
+                                                            <option value="Birthday">Birthday</option>
+                                                            <option value="Anniversary">Anniversary</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-6">
+                                                        <label for="size" class="form-label">Size</label>
+                                                        <select class="form-select" aria-label="Select Your size" id="size" name="size" required>
+                                                            <option selected hidden>Select Your Size</option>
+                                                            <option value="Small">Small</option>
+                                                            <option value="Medium">Medium</option>
+                                                            <option value="Large">Large</option>
+                                                            <option value="x-Large">x-Large</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <label for="flower" class="form-label">Flower</label>
+                                                        <select class="form-select" aria-label="Select Your flower" id="flower" name="flower" required>
+                                                            <option selected hidden>Select Your Flower</option>
+                                                            <option value="Tulips">Tulips</option>
+                                                            <option value="Roses">Roses</option>
+                                                            <option value="Sunflowers">Sunflowers</option>
+                                                            <option value="Carnations">Carnations</option>
+                                                            <option value="Hydrangea">Hydrangea</option>
+                                                            <option value="We Choose">We Choose</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <h5 class="card-header">Delivery</h5>
+                                            <div class="card-body">
+                                                <div class="row g-4">
+                                                    <div class="col-lg-12">
+                                                        <label for="delivery_date" class="form-label">Delivery Date</label>
+                                                    <input class="form-control" type="date" id="delivery_date" name="delivery_date" required>
+                                                    </div>
+                    
+                                                    <div class="col-lg-12">
+                                                        <label for="delivery_time" class="form-label">Delivery Time</label>
+                                                    <input class="form-control" type="time" id="delivery_time" name="delivery_time" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <h5 class="card-header">Delivery Address</h5>
+                                    <div class="card-body">
+                                        <div class="row g-4">
+                                            <div class="col-lg-4">
+                                                <label for="house" class="form-label">House/LP #</label>
+                                                <input type="text" class="form-control" id="house" name="house" placeholder="House/LP #" required>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <label for="street" class="form-label">Street</label>
+                                                <input type="text" class="form-control" id="street" name="street" placeholder="Street" required>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <label for="town" class="form-label">Town</label>
+                                                <input type="text" class="form-control" id="town" name="town" placeholder="Town" required>
+                                            </div>
+                                            
+                                            <div class="col-lg-12">
+                                                <label for="additional_instructions" class="form-label">Additional Delivery Instructions</label>
+                                                <textarea class="form-control" name="additional_instructions" placeholder="Enter your additional Instructions here" rows="4" id="additional_instructions" required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-warning float-end">Submit Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- End -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="container-fluid bg-dark pb-0">
+            <div class="col-12 text-secondary">
+                <p class="mb-0">
+                    <i class="fa-regular fa-copyright"></i> <span></span> Flowers4U, 2024
+                </p>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

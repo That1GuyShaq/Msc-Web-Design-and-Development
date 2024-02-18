@@ -5,15 +5,18 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <link rel="icon" href="assets/images/cropped-logo-square-32x32.png" sizes="32x32">
 
     <title>About Us - Flowers4U</title>
 </head>
 <body>
-    <header class="border-bottom border-5 border-warning bg-light sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-75 text-nowrap" aria-label="Top Navigation">
+    <header class="sticky-top border-bottom border-5 border-danger border-opacity-25">
+        <nav class="navbar navbar-expand-lg text-nowrap bg-pink" aria-label="Top Navigation">
             <div class="container-fluid d-flex justify-content-between">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" class="img-fluid float-start w-25" alt="Venture Credit Union logo">
+                    <img src="assets/images/logo.png" class="img-fluid float-start w-25" alt="Flowers4U logo">
                 </a>
 
                 <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_links" aria-controls="navbar_links" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,103 +30,85 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link" href="flowers.html">Flowers</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link active" href="about-us.html">About Us</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+    
+                        <li class="nav-item ms-5">
+                            <a class="btn btn-outline-warning" href="request.html">Request</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    
     <main>
+        <!-- About -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 page-title">
+                    <p class="text-center page-title">
+                        About Us
+                    </p>
+                </div>
+                <div class="col-12 about-us border-top border-5 border-danger border-opacity-25">
+                    <p class="w-100 mx-auto pt-3">
+                        <span>L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum rutrum nisi, sed interdum nisi fermentum ac. Donec varius pretium urna vel consequat. Donec dapibus viverra augue, non laoreet erat aliquam id. Integer blandit laoreet sapien nec fringilla. Duis condimentum tortor eget ante scelerisque sodales. Cras libero elit, mollis non tempus vitae, porttitor nec nisi. Fusce vulputate interdum lacus a pulvinar.
+                    </p>
+                    
+                    <p class="w-100 mx-auto">
+                        <span>S</span>ed vel venenatis massa. Donec vel neque aliquam, viverra tellus at, vestibulum elit. Aliquam mi lectus, accumsan vel varius quis, facilisis quis justo. Sed sed egestas nulla, non aliquet dui. In hac habitasse platea dictumst. Vivamus a fermentum sapien, ut cursus metus. Etiam fringilla dolor blandit eros hendrerit consectetur. Nam in metus elementum, mollis odio sed, molestie quam. Vivamus laoreet dolor sit amet tortor volutpat euismod. Quisque eu nisl a odio lobortis venenatis at eu tortor. Sed eu sapien eleifend massa imperdiet aliquet eget ac ligula. Quisque in orci vitae orci dignissim ullamcorper. Sed vitae sem enim. Mauris varius felis eu urna tincidunt fermentum. Aenean congue rutrum leo, vel pretium lectus aliquet et.
+                    </p>
 
+                    <p class="w-100 mx-auto">
+                        <span>P</span>roin vel cursus dui. Praesent quis libero interdum, aliquam turpis mattis, facilisis metus. Donec id nulla lorem. Fusce dapibus aliquam augue nec suscipit. Phasellus nec est porttitor, dapibus neque ut, semper turpis. Vestibulum tempor purus et leo suscipit, nec dapibus sem maximus. In posuere, nunc id feugiat finibus, dui massa facilisis velit, iaculis ultrices elit sem id nunc. Sed vitae elit ligula. Donec commodo scelerisque sem non tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin viverra maximus mi, ac tincidunt dui suscipit ac.
+                    </p>
+
+                    <p class="w-100 mx-auto">
+                        <span>Q</span>uisque malesuada justo nec arcu placerat, eu porta sapien fermentum. Etiam ut lacus in mauris ultrices semper. Ut lobortis felis erat, sed mattis quam mollis eget. Morbi semper sollicitudin sollicitudin. In fringilla sed lectus vel mollis. Cras pulvinar erat ut nisi fermentum, quis aliquet lectus elementum. Vestibulum rutrum erat accumsan eros consectetur sodales. Suspendisse potenti. Cras ullamcorper nisl quis arcu egestas viverra.
+                    </p>
+
+                    <p class="w-100 mx-auto">
+                        <span>E</span>tiam at dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia pellentesque lobortis. Quisque id lectus nec turpis posuere mollis quis non risus. Donec quis tristique massa, vitae dignissim massa. Phasellus nulla risus, vulputate vel posuere vel, sagittis vitae tellus. Proin fermentum luctus libero, id commodo tortor congue id. Sed et enim vitae eros posuere posuere. Cras molestie eros quis ultricies semper. Nullam venenatis tempus velit id vulputate. Duis dictum libero et lacus elementum venenatis. Nunc quis nisl laoreet mi ultricies mattis ac at tellus.
+                    </p>
+
+                    <p class="w-100 mx-auto">
+                        <span>C</span>urabitur bibendum a enim vitae elementum. Nam consequat viverra nunc eget laoreet. Mauris sit amet est turpis. Nunc ut tortor ex. Proin semper quis risus tristique vehicula. Nunc eleifend tortor eu arcu convallis, a suscipit sem tempor. Aenean maximus porta metus, vitae maximus odio.
+                    </p>
+
+                    <p class="w-100 mx-auto">
+                        <span>P</span>raesent vel urna gravida magna semper blandit a ut risus. Donec nunc tortor, faucibus id eros ut, tempus finibus velit. Aliquam ut ipsum quis velit iaculis tristique fringilla non lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Nulla porttitor libero id nibh mattis, dapibus suscipit nisl iaculis. Aenean urna libero, venenatis at posuere a, aliquet ut urna. Nullam ullamcorper scelerisque varius. Phasellus leo lacus, pellentesque nec tempus eget, aliquet sed lectus.
+                    </p>
+
+                    <p class="w-100 mx-auto">
+                        <span>A</span>liquam iaculis, ex quis eleifend vestibulum, eros arcu sagittis urna, quis fermentum turpis lorem nec mi. Sed luctus quis augue ac pharetra. Phasellus in justo in lorem consectetur placerat ac sed erat. Aliquam feugiat fermentum sem et sollicitudin. Aenean dui sem, porttitor ut consectetur eu, tempus vitae nisi. Nam varius mi maximus dui volutpat elementum. Aliquam auctor dolor risus, non iaculis risus fringilla in.
+                    </p>
+
+                    <p class="w-100 mx-auto mb-5">
+                        <span>P</span>ellentesque scelerisque ultrices odio. Cras et est vel leo elementum posuere non vitae lorem. Etiam vitae viverra ante. Vivamus non eros placerat, porta ex vitae, eleifend est. Nulla ullamcorper risus purus. Morbi pretium arcu sit amet vehicula blandit. Duis vel purus vitae libero sodales aliquet. Nulla egestas tortor vel gravida finibus. Mauris ut tincidunt ex. Quisque accumsan fermentum massa vel ullamcorper. Duis euismod purus et mi accumsan rutrum. Phasellus a faucibus ligula. Praesent sit amet nulla nulla. Sed ultrices hendrerit diam.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
     </main>
 
     <footer>
-        <!-- <nav class="container-fluid bg-dark p-4 pb-0">
-            <div class="row justify-content-between">
-                <div class="col-lg-4 col-sm-12">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" class="img-fluid float-start w-100" alt="Venture Credit Union logo">
-                    </a>
-                    <nav class="d-flex justify-content-evenly">
-                        <a href="https://www.facebook.com/VentureCU/" class="link-secondary pe-3" title="Facebook Social Link">
-                            <i class="fa-brands fa-facebook fa-2xl"></i>
-                        </a>
-                        <a href="https://www.instagram.com/venturecreditunion_/?hl=en" class="link-secondary pe-3" title="Instagram Social Link">
-                            <i class="fa-brands fa-square-instagram fa-2xl"></i>
-                        </a>
-                        <a href="https://twitter.com/venturecu" class="link-secondary pe-3" title="Twitter Social Link">
-                            <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/venture-credit-union-co-operative-society-limited" class="link-secondary pe-2" title="linkedin Social Link">
-                            <i class="fa-brands fa-linkedin fa-2xl"></i>
-                        </a>
-                    </nav>
-                </div>
-
-                <div class="col-lg-2 col-ms-12">
-                    <p class="fw-bolder text-warning">Member Services</p>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" aria-current="page" href="member-services/loans.html">Loans</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" href="member-services/insurance.html">Insurance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary disabled" aria-disabled="true" href="member-services/login.html">Member Services Portal</a>
-                        </li>
-                        <li>
-                            <hr class="horizontal-divider w-50">
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary disabled" aria-disabled="true" href="member-services/regiister.html">Become a Member</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-ms-6">
-                    <p class="fw-bolder text-warning">Media</p>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" href="media/gallery.html">Photo Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" href="media/events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" href="media/news.html">News</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-ms-12">
-                    <p class="fw-bolder text-warning">Locations</p>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" href="contact-us.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary" href="https://www.google.com/maps/place/2+Noel+St,+Couva/@10.4208764,-61.4590625,19z/data=!4m9!1m2!2m1!1s2+Noel+Street+North,+Couva+550623,+Trinidad+%26+Tobago,+W.I.!3m5!1s0x8c35f10cf7f409fd:0x7601f17499375653!8m2!3d10.4207835!4d-61.4588506!15sCjoyIE5vZWwgU3RyZWV0IE5vcnRoLCBDb3V2YSA1NTA2MjMsIFRyaW5pZGFkICYgVG9iYWdvLCBXLkkukgEQZ2VvY29kZWRfYWRkcmVzc-ABAA?entry=ttu" target="_blank">#2 Noel Street North, Couva 550623, Trinidad &amp; Tobago, W.I.</a>
-                            <hr class="horizontal-divider">
-                            <a class="nav-link link-secondary" href="https://www.google.com/maps/place/VENTURE+Credit+Union+Co-operative+Society+Limited/@10.2731751,-61.4630187,21z/data=!4m15!1m8!3m7!1s0x8c358c5443e1d367:0xb1fa4c3307a76778!2s63+Rushworth+St,+San+Fernando!3b1!8m2!3d10.2731651!4d-61.46286!16s%2Fg%2F11tjb928zy!3m5!1s0x8c358c544159db6b:0x63903f482bd0d1fb!8m2!3d10.2732229!4d-61.4628675!16s%2Fg%2F11dfpf7bnw?entry=ttu" target="_blank">#63 Rushworth Street, San Fernando, Trinidad &amp; Tobago, W.I.</a>
-                            <hr class="horizontal-divider">
-                            <a class="nav-link link-secondary" href="https://www.google.com/maps/place/Venture+Credit+Union+Co-operative+Society+Ltd./@10.6337691,-61.3410206,17z/data=!3m1!4b1!4m6!3m5!1s0x8c36000ebe839ff3:0xdec032ca6d30cbf9!8m2!3d10.6337691!4d-61.3384457!16s%2Fg%2F11bbt2j_8r?entry=ttu" target="_blank">#233 Eastern Main Road, Arouca, Trinidad &amp; Tobago, W.I.</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <a href="javascript:Void(0);" class="link-warning opacity-25 float-end" id="back-to-top" title="Scroll to top" onclick="topFunction()">
-                <i class="fa-solid fa-circle-chevron-up fa-2xl"></i>
-            </a>
-            
-            <div class="col-12 text-secondary mt-5 mb-0">
-                <p id="copyright" class="mb-0">
-                    <i class="fa-regular fa-copyright"></i> <span></span> Venture Credit Union
+        <nav class="container-fluid bg-dark pb-0">
+            <div class="col-12 text-secondary">
+                <p class="mb-0">
+                    <i class="fa-regular fa-copyright"></i> <span></span> Flowers4U, 2024
                 </p>
             </div>
-        </nav> -->
+        </nav>
     </footer>
 </body>
 </html>

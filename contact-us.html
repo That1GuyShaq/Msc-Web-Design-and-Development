@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <link rel="icon" href="assets/images/cropped-logo-square-32x32.png" sizes="32x32">
+
+    <title>Contact Us - Flowers4U</title>
+</head>
+<body>
+    <header class="sticky-top border-bottom border-5 border-danger border-opacity-25">
+        <nav class="navbar navbar-expand-lg text-nowrap bg-pink" aria-label="Top Navigation">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" class="img-fluid float-start w-25" alt="Flowers4U logo">
+                </a>
+
+                <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_links" aria-controls="navbar_links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse flex-grow-0" id="navbar_links">
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link border-warning" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="flowers.html">Flowers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact-us.html">Contact Us</a>
+                        </li>
+    
+                        <li class="nav-item ms-5">
+                            <a class="btn btn-outline-warning" href="request.html">Request</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 page-title">
+                        <p class="text-center page-title">
+                            Contact Us
+                        </p>
+                    </div>
+                    <!-- Contact Us -->
+                    <div class="container border-top border-5 border-danger border-opacity-25">
+                        <div class="row g-3">
+                            <div class="col-12 pt-3 pb-3">
+                                <form action="mailto:contactus@flowers4u.com" method="get" class="row g-3">
+                                    
+                                    <div class="col-lg-8">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <label for="telephone" class="form-label">Telephone</label>
+                                        <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="(xxx) xxx-xxxx" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="message">Your Message</label>
+                                        <textarea class="form-control" name="message" placeholder="Enter your message here" rows="7" id="message" required></textarea>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn btn-warning float-end">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-12">
+                                Or send us an email: <a href="mailto:contactus@flowers4u.com" class="link-danger text-decoration-none link-opacity-75 fnt-lora-r">contactus@flowers4u.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+        </main>
+    </main>
+
+    <footer>
+        <nav class="container-fluid bg-dark pb-0 fixed-bottom">
+            <div class="col-12 text-secondary">
+                <p class="mb-0">
+                    <i class="fa-regular fa-copyright"></i> <span></span> Flowers4U, 2024
+                </p>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

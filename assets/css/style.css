@@ -29,6 +29,10 @@ figcaption a {
 
 section:first-of-type {
     height: 30em;
+    /* background-color: rgb(253, 237, 239); */
+}
+
+section:nth-of-type(2) {
     background-color: rgb(253, 237, 239);
 }
 
@@ -38,16 +42,27 @@ section:first-of-type img {
     background-color: rgb(253, 237, 239) ;
 }
 
-.title-bar {
+.hero {
     height: 100vh; /* Set the height to 100% of the viewport height */
     border: none; /* Remove the default border*/
   }
 
-.title-bar figure > img {
+.hero figure > img {
     width: 100%; /* Make the image take 100% of the container's width */
     height: 100vh; /* Make the image take 100% of the container's height */
     object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
 }
+
+.title-bar {
+    height: 25vh; /* Set the height to 20% of the viewport height */
+    border: none; /* Remove the default border*/
+  }
+  
+  .title-bar img {
+    width: 100%; /* Make the image take 100% of the container's width */
+    height: 100%; /* Make the image take 100% of the container's height */
+    object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
+  }
 
 .page-title p:nth-of-type(1) {
     font-size: 5em;
@@ -72,3 +87,39 @@ section:first-of-type img {
     font-family: 'Mr De Haviland-regular';
 }
 
+.bg-pink {
+    background-color: rgb(253, 237, 239);
+}
+
+.about-us span {
+    font-size: larger;
+    font-weight: bold;
+    color: var(--bs-pink);
+    font-size: 1.5rem !important;
+    padding-right: 0.25rem !important;
+    font-family: 'Mr De Haviland-regular';
+}
+
+.pricing-1-header {
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    background-image:url('../images/pricing/1.jpg'); /* Image by <a href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3693269">Alexa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3693269">Pixabay</a> */
+}
+
+.pricing-2-header {
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    background-image:url('../images/pricing/2.jpg'); /* Image by <a href="https://pixabay.com/users/van3ssa_-13670757/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6066245">Desiré 🙏 Dazzy 🎹🎶 K-e-k-u-l-é</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6066245">Pixabay</a> */
+}
+
+.pricing-3-header {
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    background-image:url('../images/pricing/3.jpg'); /* Image by <a href="https://pixabay.com/users/johnyvid-6243568/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8544741">JohnyVid</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8544741">Pixabay</a> */
+}
