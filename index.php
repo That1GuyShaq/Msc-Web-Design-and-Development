@@ -41,14 +41,14 @@ $appUrl = Controller::env('.env','APP_URL' );
                             <form action="<?php echo $appUrl; ?>/App/Process/login.php" method="post" class="row g-3 needs-validation" novalidate id="loginForm">
                                 
                                 <div class="col-12">
-                                    <input type="email" class="form-control <?= isset($data->errors->email) ? 'is-invalid' : '' ?> " id="email" name="email" autocomplete="email" placeholder="Email" value="<?= isset($data->email) ? $data->email : '' ?>">
+                                    <input type="email" class="form-control <?= isset($data->errors->email) ? 'is-invalid' : '' ?> " id="email" name="email" autocomplete="email" placeholder="Email" value="<?= isset($data->email) ? $data->email : 'jdoe@example.com' ?>">
                                     <div class="invalid-feedback">
                                         <?php echo $data->errors->email ?>
                                     </div>
                                 </div>
 
                                 <div class="col-12">
-                                    <input type="password" class="form-control <?= isset($data->errors->password) ? 'is-invalid' : '' ?> <?= empty($data->errors->password) ?? 'is-valid' ?>" id="password" name="password" autocomplete="current-password" placeholder="Password">
+                                    <input type="password" class="form-control <?= isset($data->errors->password) ? 'is-invalid' : '' ?> <?= empty($data->errors->password) ?? 'is-valid' ?>" id="password" name="password" autocomplete="current-password" placeholder="Password" value="Password123!">
                                     <div class="invalid-feedback">
                                         <?php echo $data->errors->password; ?>
                                     </div>
