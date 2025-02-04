@@ -3,7 +3,8 @@
     
 $appUrl = Controller::env('.env','APP_URL' );
     session_start();
-
+    
+    print_r($_SESSION);
     if (isset($_SESSION['data'])) {
         $data = json_decode(json_encode($_SESSION['data'][0]), false);
         session_destroy();

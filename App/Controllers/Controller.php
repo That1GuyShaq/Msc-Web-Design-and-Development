@@ -22,7 +22,7 @@ Class Controller
         $appUrl = Controller::env('../../.env', 'APP_URL');
         session_start();
         $_SESSION['data'] = $data;
-        header("Location: $appUrl/' . $view . '.php");
+        header("Location: $appUrl/$view.php");
         exit;
     }
 
@@ -30,18 +30,21 @@ Class Controller
         session_start();
 
         $_SESSION['id']        = $id;
+        $_SESSION['name']      = "$firstName $lastName";
         $_SESSION['firstName'] = $firstName;
         $_SESSION['lastName']  = $lastName;
         $_SESSION['role']      = $role;
     }
 
-    public function redirectToHome($position) {
+    public function redirectToHome($role):void {
         $appUrl = Controller::env('../../.env', 'APP_URL');
-        if ($position == 'Admin') {
-            header("Location: $appUrl/Admin/index.php");
-        } else if ($position == 'Student') {
-            header("Location: $appUrl/Student/index.php");
-        }else {
+        $role   = strtolower($role);
+
+        // print("Location: $appUrl/$role.php");
+        // die;
+        if ($role == 'admin' || $role == 'student') {
+            header("Location: $appUrl/$role.php");
+        } else {
             $response = new stdClass();
             $response->errors['form'] = 'Something went wrong. Please contact your system administrator.';
             $this->view('index', [$response]);

@@ -1,8 +1,8 @@
 <?php
-    require_once(__DIR__ . '\..\App\Controllers\SessionController.php');
-    require_once(__DIR__ . '\..\App\Models\Student.php');
+    require_once(__DIR__ . '\App\Controllers\SessionController.php');
+    require_once(__DIR__ . '\App\Models\Student.php');
 
-    $appUrl   = Session::start('..\.env', 'Admin');
+    $appUrl   = Session::start('.env', 'admin');
     $data     = json_decode(json_encode($_SESSION), false);
     $students = Student::all();
 ?>
@@ -21,14 +21,14 @@
 	<body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="<?php echo $appUrl; ?>/Admin/index.php">M9ASII</a>
+                <a class="navbar-brand" href="<?php echo $appUrl; ?>/admin.php">M9ASII</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span   span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo $appUrl; ?>/Admin/index.php">Students BioData</a>
+                            <a class="nav-link active" aria-current="page" href="<?php echo $appUrl; ?>/admin.php">Students BioData</a>
                         </li>
                     </ul>
                 </div>
@@ -144,7 +144,10 @@
                                             echo "<td> $student->state </td>";
                                             echo "<td> $student->address </td>";
                                             echo "<td>
-                                                <a href='" . $appUrl . "/Admin/viewStudent.php?id=" . $student->id . "' class='btn btn-info btn-sm text-light'>View</a>
+                                                <button type='button' class='btn btn-sm btn-info text-light' data-bs-toggle='modal' data-bs-target='#studentModal' id='viewStudent' data-bs-title='View Student' data-bs-student='" . json_encode($student) . "'>
+                                                    View
+                                                </button>
+                                                
                                                 <button type='button' class='btn btn-sm btn-primary' data-bs-toggle='modal' data-bs-target='#studentModal' id='updateStudent' data-bs-title='Update Student' data-bs-appUrl='$appUrl' data-bs-student='" . json_encode($student) . "'>
                                                     Update
                                                 </button>
@@ -166,5 +169,5 @@
 	</body>
     <script src="<?php echo $appUrl; ?>/public/js/jquery.js"></script>
     <script src="<?php echo $appUrl; ?>/public/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo $appUrl; ?>/public/js/Admin/index.js"></script>
+    <script src="<?php echo $appUrl; ?>/public/js/admin.js"></script>
 </html>
