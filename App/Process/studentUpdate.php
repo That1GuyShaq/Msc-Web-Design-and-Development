@@ -17,8 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $request->state        = $_POST['state'] ?? '';
     $request->address      = $_POST['address'] ?? '';
 
-    // print_r($_SESSION);
-    // die;
     $updated = StudentController::update($request);
 
     if ($updated) {

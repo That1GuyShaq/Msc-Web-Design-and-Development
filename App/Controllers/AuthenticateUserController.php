@@ -58,11 +58,10 @@ class AuthenicateUserController extends Controller{
             if ($stmt->errno) {
                 throw new Exception("Failed to execute SQL statement: (" . $mysqli->errno . ") " . $mysqli->error);
             }
-            // print_r($stmt->num_rows);
+            
             if ($stmt->fetch()) {
                 if (password_verify($request->password, $hashedPassword)) {
-                    // print_r($firstname);
-                    // die;
+                    
                     $this->startSession($id, $firstname, $lastname, $role);
                     $this->response->valid = true;
                 } else {

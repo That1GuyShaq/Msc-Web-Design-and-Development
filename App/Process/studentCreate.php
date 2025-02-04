@@ -17,8 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $request->address      = $_POST['address'] ?? '';
     $request->createdBy    = $_POST['createdBy'] ?? '';
 
-    // print_r($request);
-    // die;
     $created = StudentController::create($request);
 
     if ($created) {

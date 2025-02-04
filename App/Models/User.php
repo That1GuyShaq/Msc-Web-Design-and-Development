@@ -37,8 +37,6 @@ class User
     
     public static function create($firstName, $lastName, $email, $password, $role):User | null
     {
-        print_r($password);
-        // die;
         try {
             $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
             $controller = new Controller();

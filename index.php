@@ -3,8 +3,6 @@
     
 $appUrl = Controller::env('.env','APP_URL' );
     session_start();
-    
-    print_r($_SESSION);
     if (isset($_SESSION['data'])) {
         $data = json_decode(json_encode($_SESSION['data'][0]), false);
         session_destroy();
@@ -41,7 +39,7 @@ $appUrl = Controller::env('.env','APP_URL' );
                             <form action="<?php echo $appUrl; ?>/App/Process/login.php" method="post" class="row g-3 needs-validation" novalidate id="loginForm">
                                 
                                 <div class="col-12">
-                                    <input type="email" class="form-control <?= isset($data->errors->email) ? 'is-invalid' : '' ?> " id="email" name="email" autocomplete="email" placeholder="Email" value="<?= isset($data->email) ? $data->email : 'jdoe@example.com' ?>">
+                                    <input type="email" class="form-control <?= isset($data->errors->email) ? 'is-invalid' : '' ?> " id="email" name="email" autocomplete="email" placeholder="Email" value="<?= isset($data->email) ? $data->email : 'jdoe@email.com' ?>">
                                     <div class="invalid-feedback">
                                         <?php echo $data->errors->email ?>
                                     </div>
