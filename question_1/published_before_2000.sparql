@@ -1,0 +1,9 @@
+PREFIX ex: <http://m9aii.org/question_1#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?book ?year WHERE {
+    ?book a ex:Book ;
+        ex:publicationYear ?year .
+    FILTER (?year < "2000")
+}

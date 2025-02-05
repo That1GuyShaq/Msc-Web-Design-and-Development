@@ -1,0 +1,50 @@
+@base <http://m9aii.org/> .
+@prefix ex: <http://m9aii.org/question_2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Define Classes
+    ex:ProgrammingLanguage a rdfs:Class .
+    ex:Algorithm a rdfs:Class .
+    ex:DataStructure a rdfs:Class .
+    ex:Paradigm a rdfs:Class .
+    ex:Developer a rdfs:Class .
+
+# Define Properties
+    ex:usesLanguage a rdf:Property ;
+        rdfs:domain ex:Algorithm ;
+        rdfs:range ex:ProgrammingLanguage .
+
+    ex:hasComplexity a rdf:Property ;
+        rdfs:domain ex:Algorithm ;
+        rdfs:range rdfs:Literal .
+
+    ex:isUsedFor a rdf:Property ;
+        rdfs:domain ex:ProgrammingLanguage ;
+        rdfs:range rdfs:Literal .
+
+    ex:developedBy a rdf:Property ;
+        rdfs:domain ex:ProgrammingLanguage ;
+        rdfs:range ex:Developer .
+
+# Instances of Programming Languages
+    ex:Python a ex:ProgrammingLanguage .
+    ex:Java a ex:ProgrammingLanguage .
+    ex:Cplusplus a ex:ProgrammingLanguage .
+
+# Instances of Algorithms
+    ex:QuickSort a ex:Algorithm ;
+        ex:usesLanguage ex:Python ;
+        ex:hasComplexity "O(n log n)" .
+
+    ex:BubbleSort a ex:Algorithm ;
+        ex:usesLanguage ex:Java ;
+        ex:hasComplexity "O(n^2)" .
+
+# Instances of Developers
+    ex:GuidoVanRossum a ex:Developer .
+    ex:JamesGosling a ex:Developer .
+
+# Assign Developers to Languages
+    ex:Python ex:developedBy ex:GuidoVanRossum .
+    ex:Java ex:developedBy ex:JamesGosling .
