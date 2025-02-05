@@ -44,73 +44,14 @@
             <div class="row g-3">
                 <div class="col-12">
 
-                    <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#studentModal" id="createStudent" data-bs-title="Create Student" data-bs-created-by="<?php echo $data->id; ?>">
+                    <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#createStudentModal" id="createStudent" data-bs-app-url="<?php echo $appUrl; ?>" data-bs-created-by="<?php echo $data->id; ?>">
                         <span class="fw-bold">+</span> Create Student
                     </button>
 
-                    <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby=studentModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="<?php echo $appUrl; ?>/App/Process/studentCreate.php" method="post" class="row g-3 needs-validation" id="studentForm" novalidate>
-                                        <input type="hidden" name="createdBy" value="<?php echo $data->id; ?>">
-                                        
-                                        <div class="col-6">
-                                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="Date of Birth" max="<?php echo date('Y-m-d'); ?>" required>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <select class="form-select" id="gender" name="gender" required>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-4"> 
-                                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control" id="state" name="state" placeholder="State" required>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <textarea class="form-control" id="address" name="address" placeholder="Address" rows="3" required></textarea>
-                                            <div class="invalid-feedback">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-success" form="studentForm" id="submit">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php require_once(__DIR__ . '\public\modals\create.html'); ?>
+                    <?php require_once(__DIR__ . '\public\modals\view.html'); ?>
+                    <?php require_once(__DIR__ . '\public\modals\update.html'); ?>
+                    <?php require_once(__DIR__ . '\public\modals\delete.html'); ?>
                 </div>
                 <div class="col-12">
                     <div class="card"> 
@@ -143,16 +84,16 @@
                                             echo "<td> $student->email </td>";
                                             echo "<td> $student->state </td>";
                                             echo "<td> $student->address </td>";
-                                            echo "<td>
-                                                <button type='button' class='btn btn-sm btn-info text-light' data-bs-toggle='modal' data-bs-target='#studentModal' id='viewStudent' data-bs-title='View Student' data-bs-student='" . json_encode($student) . "'>
+                                            echo "<td class='text-center'>
+                                                <button type='button' class='btn btn-sm btn-info text-light' data-bs-toggle='modal' data-bs-target='#viewStudentModal' id='viewStudent' data-bs-student='" . json_encode($student) . "'>
                                                     View
                                                 </button>
                                                 
-                                                <button type='button' class='btn btn-sm btn-primary' data-bs-toggle='modal' data-bs-target='#studentModal' id='updateStudent' data-bs-title='Update Student' data-bs-appUrl='$appUrl' data-bs-student='" . json_encode($student) . "'>
+                                                <button type='button' class='btn btn-sm btn-primary' data-bs-toggle='modal' data-bs-target='#updateStudentModal' id='updateStudent' data-bs-app-url='$appUrl' data-bs-student='" . json_encode($student) . "'>
                                                     Update
                                                 </button>
 
-                                                <button type='button' class='btn btn-sm btn-danger' data-bs-toggle='modal' data-bs-target='#studentModal' id='deleteStudent' data-bs-title='Delete Student' data-bs-appUrl='$appUrl' data-bs-student='" . json_encode($student) . "'>
+                                                <button type='button' class='btn btn-sm btn-danger' data-bs-toggle='modal' data-bs-target='#deleteStudentModal' id='deleteStudent' data-bs-app-url='$appUrl' data-bs-student='" . json_encode($student) . "'>
                                                     Delete
                                                 </button>
                                             </td>";

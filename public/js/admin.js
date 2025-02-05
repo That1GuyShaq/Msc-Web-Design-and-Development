@@ -1,120 +1,99 @@
 
-const studentModal = document.getElementById('studentModal');
-if (studentModal) {
-    studentModal.addEventListener('show.bs.modal', event => {
-    const button  = event.relatedTarget;
-    const title   = button.getAttribute('data-bs-title');
+(() => { 'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
 
-    const modalBodyTextArea = studentModal.querySelector('.modal-body textarea');
-    const modalBodyInput    = studentModal.querySelectorAll('.modal-body input');
-    const modalBodySelect   = studentModal.querySelector('.modal-body select');
-    const modalBodyForm     = studentModal.querySelector('.modal-body form');
-    const modalTitle        = studentModal.querySelector('.modal-title');
-    const modalSubmit       = studentModal.querySelector('#submit');
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
 
-    modalTitle.textContent = title
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+
+const csModal = document.getElementById('createStudentModal');
+const vsModal = document.getElementById('viewStudentModal');
+const usModal = document.getElementById('updateStudentModal');
+const dsModal = document.getElementById('deleteStudentModal');
+
+/**
+ * Create studnet Modal logic
+ */
+csModal.addEventListener('show.bs.modal', event => {
+  const button = event.relatedTarget;
+  const input  = csModal.querySelector('#createdBy');
+  const appUrl = button.getAttribute('data-bs-app-url');
+  const id     = button.getAttribute('data-bs-created-by');
+  const form   = csModal.querySelector('#createStudentForm');
+
+  input.value  = id;
+  form.action = appUrl + '/App/Process/studentCreate.php';
+});
+
+/**
+ * View Student Modal Logic
+ */
+vsModal.addEventListener('show.bs.modal', event => {
+  const button  = event.relatedTarget;
+  const inputs  = vsModal.querySelectorAll('input');
+  const data    = button.getAttribute('data-bs-student');
+
+  const student = JSON.parse(data);
+  
+  inputs[0].value = student.firstName;
+  inputs[1].value = student.lastName;
+  inputs[2].value = student.dateOfBirth;
+  inputs[3].value = student.gender;
+  inputs[4].value = student.phoneNumber;
+  inputs[5].value = student.email;
+  inputs[6].value = student.state;
+  inputs[7].value = student.address;
+});
+
+/**
+ * Update Student Modal Logic
+ */
+usModal.addEventListener('show.bs.modal', event => {
     
-    if (title === 'View Student') {
-        const data    = button.getAttribute('data-bs-student');
-        const student = JSON.parse(data);
+  const button  = event.relatedTarget;
+  const select  = usModal.querySelector('select');
+  const inputs  = usModal.querySelectorAll('input');
+  const appUrl  = button.getAttribute('data-bs-app-url');
+  const data    = button.getAttribute('data-bs-student');
+  const form    = usModal.querySelector('#updateStudentForm');
 
-        modalBodyInput.forEach(input => {
-            input.disabled = true;
-        })
-        
-        modalBodyInput[0].value = '';
-
-        modalBodyInput[1].value = student.firstName;
-        modalBodyInput[2].value = student.lastName;
-        modalBodyInput[3].value = student.dateOfBirth;
-        modalBodyInput[4].value = student.phoneNumber;
-        modalBodyInput[5].value = student.email;
-        modalBodyInput[6].value = student.state;
-        
-        modalBodySelect.value = student.gender;
-
-        modalBodyTextArea.disabled  = true;
-        modalBodyTextArea.innerHTML = student.address;
-
-        modalBodySelect.disabled = true;
-        modalSubmit.classList.add('d-none');
-    } else if (title === 'Update Student') { 
-        const data    = button.getAttribute('data-bs-student');
-        const student = JSON.parse(data);
-
-        modalBodyInput.forEach(input => {
-            input.disabled = false;
-        })
-        
-        modalBodyInput[0].name  = 'userId';
-        modalBodyInput[0].value = student.userId;
-
-        modalBodyInput[1].value = student.firstName;
-        modalBodyInput[2].value = student.lastName;
-        modalBodyInput[3].value = student.dateOfBirth;
-        modalBodyInput[4].value = student.phoneNumber;
-        modalBodyInput[5].value = student.email;
-        modalBodyInput[6].value = student.state;
-        
-        modalBodySelect.value = student.gender;
-
-        modalBodyTextArea.disabled  = true;
-        modalBodyTextArea.innerHTML = student.address;
-        
-        modalBodySelect.disabled = false;
-        modalSubmit.textContent  = 'Update';
-        modalBodyForm.action     = button.getAttribute('data-bs-appUrl') + '/App/Process/studentUpdate.php';
-
-        modalSubmit.classList.remove('d-none');
-    } else if (title === 'Delete Student') {
-        const modalBody       = studentModal.querySelector('.modal-body');
-        const modalFooter     = studentModal.querySelector('.modal-footer');
-        const data            = button.getAttribute('data-bs-student');
-        const modalSubmitLink = document.createElement('a');
-        const student         = JSON.parse(data);
-
-        modalBody.textContent       = 'Are you sure you want to delete the Bio Data of the student ' + student.firstName + ' ' + student.lastName + '?';
-        modalSubmitLink.href        = button.getAttribute('data-bs-appUrl') + '/App/Process/studentDelete.php?id=' + student.id;
-        modalSubmitLink.textContent = 'Delete';
-
-        modalSubmitLink.classList.add('btn', 'btn-danger');
-        modalFooter.appendChild(modalSubmitLink);
-
-        modalSubmit.remove();
-        
-    }else {
-        const id = button.getAttribute('data-bs-created-by');
-        console.log(id);
-        
-        modalBodyInput.forEach(input => {
-            input.disabled = false;
-            input.value = '';
-        })
-        modalBodyInput[0].name   = 'createdBy';
-        modalBodyInput[0].value  = id;
-        modalBodySelect.disabled = false;
-        modalBodySelect.value    = '';
-        modalSubmit.textContent  = 'Create';
-        modalSubmit.classList.remove('d-none');
-    }
-})
-}
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-    'use strict'
+  const student = JSON.parse(data);
   
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
+  inputs[0].value = student.userId;
+  inputs[1].value = student.firstName;
+  inputs[2].value = student.lastName;
+  inputs[3].value = student.dateOfBirth;
+  inputs[4].value = student.phoneNumber;
+  inputs[5].value = student.email;
+  inputs[6].value = student.state;
+  inputs[7].value = student.address;
   
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+  select.value = student.gender;
+  form.action  = appUrl + '/App/Process/studentUpdate.php';
+});
+
+/**
+ * Delete Student Modal Logic
+ */
+dsModal.addEventListener('show.bs.modal', event => { 
+  const button  = event.relatedTarget;
+  const name    = dsModal.querySelector('#studentName');
+  const appUrl  = button.getAttribute('data-bs-app-url');
+  const data    = button.getAttribute('data-bs-student');
+  const link    = dsModal.querySelector('#deleteStudentConfirm');
+
+  const student = JSON.parse(data);
   
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })()
+  name.innerHTML = student.firstName + ' ' + student.lastName;
+  link.href      = appUrl + '/App/Process/studentDelete.php?id=' + student.userId;
+});
+
