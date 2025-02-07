@@ -1,0 +1,65 @@
+@base <http://m9aii.org/> .
+@prefix ex: <http://m9aii.org/question_4#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix wikidata: <https://www.wikidata.org/entity/> .
+@prefix openlibrary: <https://openlibrary.org/works/> .
+
+# Define Classes
+    ex:LibraryResource a rdfs:Class .
+    ex:Book a rdfs:Class ; rdfs:subClassOf ex:LibraryResource .
+    ex:Author a rdfs:Class .
+    ex:Publisher a rdfs:Class .
+    ex:Copy a rdfs:Class .
+
+# Define Properties
+    ex:hasAuthor a rdf:Property ;
+        rdfs:domain ex:Book ;
+        rdfs:range ex:Author .
+
+    ex:publishedBy a rdf:Property ;
+        rdfs:domain ex:Book ;
+        rdfs:range ex:Publisher .
+
+    ex:publicationYear a rdf:Property ;
+        rdfs:domain ex:Book ;
+        rdfs:range rdfs:Literal .
+
+# Instances of Authors with Linked Data
+    ex:J.K.Rowling a ex:Author ;
+        owl:sameAs wikidata:Q34660 ;
+        foaf:name "J.K. Rowling" .
+
+    ex:George.Orwell a ex:Author ;
+        owl:sameAs dbpedia:George_Orwell ;
+        foaf:name "George Orwell" .
+
+# Instances of Publishers with External Links
+    ex:PenguinBooks a ex:Publisher ;
+        owl:sameAs dbpedia:Penguin_Books ;
+        foaf:name "Penguin Books" .
+
+    ex:Bloomsbury a ex:Publisher ;
+        owl:sameAs dbpedia:Bloomsbury_Publishing ;
+        foaf:name "Bloomsbury Publishing" .
+
+# Instances of Books with External Identifiers
+    ex:HarryPotter a ex:Book ;
+        ex:hasAuthor ex:J.K.Rowling ;
+        ex:publishedBy ex:Bloomsbury ;
+        ex:publicationYear "1997" ;
+        dcterms:identifier "ISBN-9780747532699" ;
+        owl:sameAs dbpedia:Harry_Potter ;
+        owl:sameAs openlibrary:OL82563W .
+
+    ex:1984 a ex:Book ;
+        ex:hasAuthor ex:George.Orwell ;
+        ex:publishedBy ex:PenguinBooks ;
+        ex:publicationYear "1949" ;
+        dcterms:identifier "ISBN-9780451524935" ;
+        owl:sameAs dbpedia:Nineteen_Eighty-Four ;
+        owl:sameAs openlibrary:OL116268W .
