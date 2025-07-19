@@ -2,9 +2,10 @@
 
 **Artifact:** Multi-tenant SaaS for personal-care formulators  
 **Stack:** 
-- Laravel12
+- [Laravel12](https://laravel.com/docs/12.x)
 - React
 - PostgreSQL
+- Spatie - 
 - [Tenacy for Laravel](https://tenancyforlaravel.com/)
 
 ---
@@ -209,5 +210,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTY0MzkyN119
+eyJoaXN0b3J5IjpbLTE4NTU3MDkzNTddfQ==
 -->
