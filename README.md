@@ -66,6 +66,12 @@ SESSION_DOMAIN=".${APP_DOMAIN}"
 SESSION_SECURE_COOKIE=true
 SESSION_CONNECTION=central
 ```
+```php
+DB_CACHE_CONNECTION=central
+DB_CACHE_TABLE=cache
+DDB_CACHE_LOCK_CONNECTION=central
+DDB_CACHE_LOCK_TABLE=cache_locks
+```
 ## Database Setup
 1. Migrate:  
 ```bash
@@ -216,6 +222,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA1MjExMTUsLTE3OTMzNDUxMTRdfQ
-==
+eyJoaXN0b3J5IjpbMTM4MzA2MzE0LC0xNzkzMzQ1MTE0XX0=
 -->
