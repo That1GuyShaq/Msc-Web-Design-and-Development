@@ -51,13 +51,20 @@ php artisan key: generate
 
 - Set your values:  
 ```php
-APP_URL=http://localhost:8000  
-DB_CONNECTION=pgsql  
+APP_URL=https://localhost:8000  
+```
+```php
+DB_CONNECTION=central
 DB_HOST=127.0.0.1  
 DB_PORT=5432  
 DB_DATABASE=your_database
 DB_USERNAME=your_user  
 DB_PASSWORD=your_password
+```
+```php
+SESSION_DOMAIN=".${APP_DOMAIN}"
+SESSION_SECURE_COOKIE=true
+SESSION_CONNECTION=central
 ```
 ## Database Setup
 1. Migrate:  
@@ -209,6 +216,6 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzUyODIzMDcsLTE3OTMzNDUxMTRdfQ
+eyJoaXN0b3J5IjpbLTEyNDA1MjExMTUsLTE3OTMzNDUxMTRdfQ
 ==
 -->
