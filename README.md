@@ -1,7 +1,10 @@
 # Msc-Web-Design-and-Development
 
 **Artifact:** Multi-tenant SaaS for personal-care formulators  
-**Stack:** Laravel 12, React, PostgreSQL, Spatie Multitenancy  
+**Stack:** 
+- Laravel 12, 
+- React, 
+- PostgreSQL, Spatie Multitenancy  
 
 ---
 
@@ -53,33 +56,18 @@ DB_USERNAME=your_user
 DB_PASSWORD=your_password
 ```
 ## Database Setup
-
 1. Migrate:  
 ```bash
-php artisan migrate
+	php artisan migrate
 ```
 
 2. Seed “world” data:  
 ```bash
-php artisan db:seed --class=WorldSeeder
+	php artisan db:seed --class=WorldSeeder
 ```
 3. Seed application data:
 ```bash  
-php artisan db:seed
-```
-## Seeding & Factories
-
-- Factory fix: ensure city/state/country line up. See SupplierFactory in database/factories.
-```php
-// in SupplierFactory.php
-$city = DB::connection('central')->table('cities')->inRandomOrder()->first();
-return [
-  'city'            => $city->name,
-  'state_province'  => DB::connection('central')->table('states')->where('id', $city->state_id)->value('name'),
-  'country'         => DB::connection('central')->table('countries')->where('id', $city->country_id)->value('name'),
-  // …other fields…
-];
-
+	php artisan db:seed
 ```
 
 ## Running the App
@@ -97,7 +85,9 @@ Visit http://localhost:8000
 ## Testing
 
 - Run your PHPUnit feature tests:  
+```bash
 php artisan test
+```
 
 ## API Endpoints
 
@@ -218,5 +208,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDczMDAyMV19
+eyJoaXN0b3J5IjpbNjEyNTgxNDE3XX0=
 -->
