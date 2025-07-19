@@ -4,7 +4,7 @@
 **Stack:** 
 - [Laravel12](https://laravel.com/docs/12.x)
 - React
-- PostgreSQL
+- [PostgreSQL17](https://www.postgresql.org/docs/17/index.html)
 - [Spatie - Activity Log v4](https://spatie.be/docs/laravel-activitylog/v4/introduction)
 - [Spatie - Permissions v6](https://spatie.be/docs/laravel-permission/v6/introduction)
 - [Tenacy for Laravel](https://tenancyforlaravel.com/)
@@ -211,5 +211,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTM3NDY1OF19
+eyJoaXN0b3J5IjpbLTIzNzIwNTQ2XX0=
 -->
