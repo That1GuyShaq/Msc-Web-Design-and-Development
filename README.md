@@ -206,11 +206,7 @@ php artisan test
 
 ## Known Issues
 
-- Factory alignment: fixed city/state/country mismatch in SupplierFactory.
 
-- Wireframes & docs: find PlantUML diagrams under /docs/.
-
-- Hosting: if you choose not to deploy, include screenshots in your final report.
 
 
 ## License
@@ -223,5 +219,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTMzMDEyODZdfQ==
+eyJoaXN0b3J5IjpbMjEyNzg0MzEwMV19
 -->
