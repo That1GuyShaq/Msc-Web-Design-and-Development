@@ -212,9 +212,16 @@ php artisan test
 
 - Hosting: if you choose not to deploy, include screenshots in your final report.
 
+
 ## License
 
-- MIT © Shaquille Daniel
+© 2025 Shaquille Daniel.
+
+This software and its documentation are provided **solely for the use of UNICAF University** in fulfilment of the requirements for the  
+MSc Web Design and Development final project. All rights not expressly granted herein are reserved.
+
+*You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NzM2NTQ2OF19
+eyJoaXN0b3J5IjpbLTE4OTMzMDEyODZdfQ==
 -->
