@@ -15,9 +15,8 @@
 6. [Running the App](#running-the-app)  
 7. [Testing](#testing)  
 8. [API Endpoints](#api-endpoints)  
-8. [Authentication & Dashboard](###Authentication-&-Dashboard)
-10. [Known Issues](#known-issues)  
-11. [License](#license)  
+9. [Known Issues](#known-issues)  
+10. [License](#license)  
 
 ---
 
@@ -209,13 +208,13 @@ php artisan test
 
 - Factory alignment: fixed city/state/country mismatch in SupplierFactory.
 
-<![if !supportLists]>· <![endif]>Wireframes & docs: find PlantUML diagrams under /docs/.
+- Wireframes & docs: find PlantUML diagrams under /docs/.
 
-<![if !supportLists]>· <![endif]>Hosting: if you choose not to deploy, include screenshots in your final report.
+- Hosting: if you choose not to deploy, include screenshots in your final report.
 
 ## License
 
-<![if !supportLists]>· <![endif]>MIT © Shaquille Daniel
+- MIT © Shaquille Daniel
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MzI0OTcyM119
+eyJoaXN0b3J5IjpbLTg2NzM2NTQ2OF19
 -->
