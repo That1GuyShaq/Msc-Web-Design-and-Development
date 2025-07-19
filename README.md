@@ -95,7 +95,7 @@ php artisan test
 
 ## API Endpoints
 
-> All tenant-scoped routes require authentication. Each path will be prefixed with your tenant domain (e.g. `https://{tenant}your-app.com/…`).
+> All tenant-scoped routes require authentication. Each path will be prefixed with your tenant domain (e.g. `https://{tenant}.appdomain.com/…`).
 
 ---
 
@@ -209,5 +209,6 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4MTY2MDkzLC0xNzkzMzQ1MTE0XX0=
+eyJoaXN0b3J5IjpbLTEyNzUyODIzMDcsLTE3OTMzNDUxMTRdfQ
+==
 -->
