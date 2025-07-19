@@ -83,7 +83,7 @@ DB_PASSWORD=your_password
 ```bash
 npm run build  
 ```
-- Serve the Laravel backend:  
+- Serve the Laravel backend in a new terminal:  
 ```bash
 php artisan serve
 ```
@@ -213,6 +213,6 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ5NDE2MTI3LDEzODMwNjMxNCwtMTc5Mz
-M0NTExNF19
+eyJoaXN0b3J5IjpbLTk2NTU4MTg2Nyw2NDk0MTYxMjcsMTM4Mz
+A2MzE0LC0xNzkzMzQ1MTE0XX0=
 -->
