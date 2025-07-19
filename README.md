@@ -38,20 +38,19 @@ git clone https://github.com/That1GuyShaq/Msc-Web-Design-and-Development.git
 cd Msc-Web-Design-and-Development
 composer install
 npm install
-cp .env.example .env
 php artisan key: generate
 ```
 ## Environment Variables
 
-- Copy .env.example → .env and set your values:  
+- Set your values:  
 ```php
 APP_URL=http://localhost:8000  
 DB_CONNECTION=pgsql  
 DB_HOST=127.0.0.1  
 DB_PORT=5432  
-DB_DATABASE=your_db  
+DB_DATABASE=your_database
 DB_USERNAME=your_user  
-DB_PASSWORD=your_pass
+DB_PASSWORD=your_password
 ```
 ## Database Setup
 
@@ -219,5 +218,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNzg0MzEwMV19
+eyJoaXN0b3J5IjpbLTQwMDczMDAyMV19
 -->
