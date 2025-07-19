@@ -45,11 +45,12 @@ git clone https://github.com/That1GuyShaq/Msc-Web-Design-and-Development.git
 cd Msc-Web-Design-and-Development
 composer install
 npm install
+cp .env.example .env
 php artisan key: generate
 ```
 ## Environment Variables
 
-- Set your values:  
+- Copy .env and set your values:  
 ```php
 APP_URL=https://localhost:8000  
 ```
@@ -78,14 +79,15 @@ DB_PASSWORD=your_password
 
 ## Running the App
 
+- Watch & compile React front-end:  
+```bash
+npm run build  
+```
 - Serve the Laravel backend:  
 ```bash
 php artisan serve
 ```
-- Watch & compile React front-end:  
-```bash
-npm run dev  
-```
+
 Visit http://localhost:8000
 
 ## Testing
@@ -211,6 +213,6 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDE3MDY0OCwxMzgzMDYzMTQsLTE3OT
-MzNDUxMTRdfQ==
+eyJoaXN0b3J5IjpbLTE4NzY5NDkwMzEsMTM4MzA2MzE0LC0xNz
+kzMzQ1MTE0XX0=
 -->
