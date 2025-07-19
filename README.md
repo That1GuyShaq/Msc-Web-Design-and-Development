@@ -1,6 +1,6 @@
 # Msc-Web-Design-and-Development
 
-**Artifact:** Multi-tenant SaaS for personal-care formulators  
+**Artifact:** Software-as-a-Service Platform for Small-Scale Personal Care Product Formulators  
 **Stack:** 
 - [React 19](https://react.dev/)
 - [Laravel 12](https://laravel.com/docs/12.x)
@@ -212,5 +212,5 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxMDU3MjA1XX0=
+eyJoaXN0b3J5IjpbLTE3OTMzNDUxMTRdfQ==
 -->
