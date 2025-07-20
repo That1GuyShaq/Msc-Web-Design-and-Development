@@ -19,11 +19,10 @@
 3. [Environment Variables](#environment-variables)  
 4. [Database Setup](#database-setup)  
 5. [Seeding & Factories](#seeding--factories)  
-6. [Running the App](#running-the-app)  
-7. [Testing](#testing)  
-8. [API Endpoints](#api-endpoints)  
-9. [Known Issues](#known-issues)  
-10. [License](#license)  
+6. [Running the App](#running-the-app)
+7. [API Endpoints](#api-endpoints)  
+8. [Known Issues](#known-issues)  
+9. [License](#license)  
 
 ---
 
@@ -89,13 +88,6 @@ php artisan serve
 ```
 
 Visit http://localhost:8000
-
-## Testing
-
-- Run your PHPUnit feature tests:  
-```bash
-php artisan test
-```
 
 ## API Endpoints
 
@@ -213,6 +205,6 @@ MSc Web Design and Development final project. All rights not expressly granted h
 *You may copy and run this code only within the context of UNICAF University coursework. Any other use, redistribution, or derivative work is prohibited without the author’s permission.*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTU4MTg2Nyw2NDk0MTYxMjcsMTM4Mz
-A2MzE0LC0xNzkzMzQ1MTE0XX0=
+eyJoaXN0b3J5IjpbLTUxNjU5MjE5OCwtOTY1NTgxODY3LDY0OT
+QxNjEyNywxMzgzMDYzMTQsLTE3OTMzNDUxMTRdfQ==
 -->
